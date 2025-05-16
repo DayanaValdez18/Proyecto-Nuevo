@@ -41,8 +41,13 @@ main {
 
 /*Estilo del header*/
 header {
-background-color: #ffffff;
-padding: 0px;
+    position: fixed; /*Fijo*/
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;/*por encima de todos los elementos*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra  */
+    background-color: #ffffff;
+    padding: 0px;
 }
  nav ul {
     display: flex;
@@ -72,7 +77,7 @@ background-color: #93AEC1;
  }
 
  /*imagen de empresa*/
- .icono {
+.icono {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -80,7 +85,8 @@ background-color: #93AEC1;
     justify-content: flex-start;
     background-color: #ffffff;
     width: 80px;
-    height: 60px;
+    height: 50px;
+ }
  }
 
  .icono img {
